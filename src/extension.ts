@@ -12,6 +12,7 @@ import { peafowlColorInitExtension } from './peafowlColor';
 import { sortLinesInitExtension } from './sortLines';
 import { startBashInitExtension } from './startBash';
 import { coverageInitExtension } from './coverage';
+import { copyOpenFilePathsInitExtension } from './copyOpenFilePaths';
 
 // will init lazily
 export function activate(context: vscode.ExtensionContext) {
@@ -29,6 +30,7 @@ export function activate(context: vscode.ExtensionContext) {
   sortLinesInitExtension(context);
   multipleCommandsInitExtension(context);
   coverageInitExtension(context);
+  copyOpenFilePathsInitExtension(context);
 }
 
 export function deactivate() {
